@@ -1,5 +1,8 @@
 {
-  "binary": {},
+  "binary": {
+    "server": "binarypack",
+    "client": "js-binarypack"
+  },
   "json": {},
   "jsonh": {
     "server": "jsonh"
