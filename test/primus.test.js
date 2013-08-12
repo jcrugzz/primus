@@ -64,11 +64,18 @@ describe('Primus', function () {
     });
   });
 
-  it('accepts custom message parsers', function () {
+  it('accepts a jsonh message parser', function () {
     var primus = new Primus(server, { parser: 'jsonh' });
 
     expect(primus.parser.library).to.be.a('string');
     expect(primus.parser.library).to.include('JSONH');
+  });
+
+  it('accepts a binary message parser', function () {
+    var primus = new Primus(server, { parser: 'binary' });
+
+    expect(primus.parser.library).to.be.a('string');
+    expect(primus.parser.library).to.include('binarypack');
   });
 
   it('accepts a third-party parser', function () {
