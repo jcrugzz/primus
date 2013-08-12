@@ -26,6 +26,5 @@ exports.decoder = function decoder(data, fn) {
   catch (e) { fn(e) }
 };
 
-exports.library =
-  require('fs').readFileSync(require.resolve('js-binarypack'), 'dist/binarypack.js, utf-8');
+exports.library = require('fs').readFileSync(require.resolve('js-binarypack'), 'utf-8');
 
