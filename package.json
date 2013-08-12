@@ -41,6 +41,8 @@
     "sockjs": "0.3.x",
     "ws": "0.4.x",
     "sockjs-client-node": "0.0.0",
-    "request": "~2.21.0"
+    "request": "~2.21.0",
+    "js-binarypack": "0.0.4",
+    "binarypack": "0.0.4"
   }
 }
